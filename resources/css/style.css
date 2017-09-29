@@ -1,0 +1,436 @@
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+}
+
+.footercontainer {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+}
+
+.imagecontainer {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+}
+
+.secondsitecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  background-color: black;
+  color: seashell;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  padding-left: 0.5rem;
+}
+
+.heading {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+/* Banner */
+
+.bannertitle {
+  color: seashell;
+  background-color: black;
+  width: 20rem;
+  height: 8rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  margin-top: 9rem;
+}
+
+.bannertitle h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 0.25rem;
+}
+.bannertitle h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner {
+  background-image: url("../images/mainbannerbckgrnd.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+/* Navigation */
+
+.navigation {
+  background-color: firebrick;
+  }
+
+  a, a:visited {
+    color: seashell;
+    text-decoration: none;
+  }
+
+  nav {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+  }
+
+  .navigation span {
+    padding: 3rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+/* Products Images */
+
+  .allproductsimages {
+    display: inline-flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    width: 100%;
+    flex-shrink: 0;
+    }
+
+  .allproductsimages img {
+    display: inline-flex;
+    max-width: 50%;
+    flex-shrink: 0;
+    }
+
+/* Products Names */
+
+.productname {
+  background-color: black;
+  color: seashell;
+  width: 15rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Product Border */
+
+.pen {
+  border: solid black 4px;
+}
+
+.watch {
+  border: solid black 4px;
+}
+
+
+.glasses {
+  border: solid black 4px;
+}
+
+/* Padding Relative to inside of the Borders */
+
+.pen img {
+padding-left: 4rem;
+padding-bottom: 3rem;
+padding-top: 3rem;
+flex-shrink: 0;
+}
+
+.watch img {
+  padding-left: 4rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  flex-shrink: 0;
+}
+
+.glasses img {
+  padding-left: 3rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  flex-shrink: 0;
+}
+
+/* Padding between outside the Borders */
+
+.productsquare {
+  padding-right: 3.5rem;
+  width: 30%;
+}
+
+/* Location and Hours */
+
+.locandhours {
+  display: inline-flex;
+  width: 100%;
+  max-width: 960px;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.locationtitle, .hourstitle {
+  background-color: black;
+  color: seashell;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+  .location, .hours {
+    display: block;
+    width: 35%;
+  }
+
+  /* Footer */
+
+  .footer {
+    background-color: black;
+    color: seashell;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+
+
+
+  /* Media Query for 1024px */
+
+  @media only screen and (max-width: 1024px) {
+
+
+
+    span {
+      display: none;
+    }
+
+    #menu {
+      display: flex;
+      color: seashell;
+      padding: 0rem;
+      justify-content: center;
+    }
+
+    .glasses {
+      display: none;
+    }
+
+    .allproductsimages {
+      display: inline-flex;
+      margin-top: 3rem;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 960px;
+      width: 100%;
+      flex-shrink: 0;
+      }
+
+    .allproductsimages img {
+      display: inline-flex;
+      max-width: 30%;
+      flex-shrink: 0;
+      }
+
+
+  .productname {
+    background-color: black;
+    color: seashell;
+    width: 24.25rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .productsquare {
+    padding-right: 3.5rem;
+    width: 47%;
+  }
+
+  .pen img {
+  padding-left: 9rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  flex-shrink: 0,
+  }
+
+  .watch img {
+    padding-left: 9rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    flex-shrink: 0;
+  }
+
+  .location, .hours {
+    display: block;
+    width: 35%;
+
+  }
+  }
+
+
+
+  /* Media Query for 470px */
+
+  @media only screen and (max-width: 470px) {
+
+    .bannertitle {
+      color: seashell;
+      background-color: black;
+      width: 20rem;
+      height: 3rem;
+      padding-top: 1rem;
+      padding-left: 2rem;
+      margin-top: 10rem;
+    }
+
+    .bannertitle h3 {
+      font-size: 0.77rem;
+      font-weight: bold;
+      padding-bottom: 0.25rem;
+    }
+    .bannertitle h1 {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .banner {
+      background-image: url("../images/mainbannerbckgrnd.jpeg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 15rem;
+    }
+
+    span {
+      display: none;
+    }
+
+    #menu {
+      display: flex;
+      color: seashell;
+      padding: 0rem;
+      justify-content: center;
+    }
+
+    .allproductsimages {
+      display: inline-flex;
+      margin-top: 3rem;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 960px;
+      width: 100%;
+      flex-shrink: 0;
+      }
+
+    .allproductsimages img {
+      display: inline-flex;
+      max-width: 50%;
+      flex-shrink: 0;
+      }
+
+      .imagecontainer {
+        display: block;
+        margin-left: 3.5rem;
+        width: 100%;
+        max-width: 960px;
+        height: auto;
+      }
+
+
+  .productname {
+    background-color: black;
+    color: seashell;
+    width: 15rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .pen img {
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  flex-shrink: 0;
+
+
+  }
+
+  .productsquare {
+    width: 90%;
+
+
+  }
+
+  .watch, .glasses {
+    display: none;
+  }
+
+  .locandhours {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .locationtitle, .hourstitle {
+    background-color: black;
+    color: seashell;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+  }
+
+    .location, .hours {
+      display: block;
+      width: 90%;
+    }
+
+    .location {
+      padding-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    .footercontainer {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 960px;
+      height: auto;
+    }
+
+
+
+
+
+
+  }
